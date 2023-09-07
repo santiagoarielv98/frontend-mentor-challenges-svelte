@@ -1,4 +1,7 @@
 <script>
+	import Card from './components/Card.svelte';
+	import { countries } from './country';
+
 	const filters = ['Africa', 'America', 'Asia', 'Europe', 'Oceania'];
 </script>
 
@@ -69,8 +72,11 @@
 		</ul>
 	</label>
 </form>
-
 <div
 	id="container"
 	class="mt-12 grid gap-[4.625rem] grid-cols-[repeat(auto-fit,_minmax(16.5rem,_1fr))]"
-/>
+>
+	{#each $countries as country (country.name.common)}
+		<Card {country} />
+	{/each}
+</div>
