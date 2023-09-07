@@ -1,5 +1,4 @@
 <script lang="ts">
-	import type { Country } from './api';
 	import Card from './components/Card.svelte';
 	import SearchInput from './components/SearchInput.svelte';
 	import { countries } from './country';
