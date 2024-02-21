@@ -11,8 +11,8 @@
 		"prepare": "husky"
 	},
 	"lint-staged": {
-		"*.{js,jsx,ts,tsx}": [
-			"eslint --fix",
+		"**/*.{js,jsx,ts,tsx}": [
+			"eslint --fix --report-unused-disable-directives --max-warnings 0",
 			"prettier --write"
 		]
 	},
