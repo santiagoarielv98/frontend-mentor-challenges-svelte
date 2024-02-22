@@ -1,19 +1,15 @@
+import { Card } from "./components/Card/Card";
 import usePokemon from "./hooks/usePokemon";
 
 const App = () => {
-	const { error, isLoaded } = usePokemon();
+	const { pokemon, error, isLoading } = usePokemon();
 
 	return (
-		<div className="bg-water">
+		<div>
 			{error ? <p>{error.message}</p> : null}
-			{isLoaded ? (
-				<div>
-					<div className="w-full max-w-sm  rounded-xl border  bg-water/50">asd</div>
-				</div>
-			) : (
-				<p>Loading...</p>
-			)}
+			{isLoading ? <p>Loading...</p> : <Card pokemon={pokemon!} />}
 		</div>
 	);
 };
+
 export default App;

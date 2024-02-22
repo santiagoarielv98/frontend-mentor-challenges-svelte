@@ -1,6 +1,8 @@
 export interface Pokemon {
+	id: number;
 	name: string;
 	sprites: PokemonSprites;
+	types: PokemonType[];
 }
 
 export interface PokemonSprites {
@@ -35,6 +37,11 @@ export interface OfficialArtworkSprites {
 
 export interface ShowdownSprites {
 	front_default: string;
+}
+
+export interface PokemonType {
+	slot: number;
+	type: NamedApiResource;
 }
 
 export type NamedApiResourceList = {
