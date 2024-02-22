@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root {
+		--type-water: 194 71% 53%;
+		--type-fire: 16 89% 61%;
+		--type-grass: 123 39% 49%;
+		--type-electric: 48 89% 54%;
+		--type-ice: 180 50% 76%;
+		--type-fighting: 0 69% 50%;
+		--type-poison: 300 65% 47%;
+		--type-ground: 30 56% 50%;
+		--type-flying: 210 68% 72%;
+		--type-psychic: 340 65% 65%;
+		--type-bug: 78 60% 50%;
+		--type-rock: 40 25% 65%;
+		--type-ghost: 260 25% 32%;
+		--type-dragon: 280 75% 55%;
+		--type-dark: 0 0% 13%;
+		--type-steel: 0 0% 70%;
+		--type-fairy: 300 87% 78%;
+	}
+}
