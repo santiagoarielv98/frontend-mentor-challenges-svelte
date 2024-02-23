@@ -4,6 +4,7 @@
 
 @layer base {
 	:root {
+		--type-normal: 0 0% 50%;
 		--type-water: 194 71% 53%;
 		--type-fire: 16 89% 61%;
 		--type-grass: 123 39% 49%;

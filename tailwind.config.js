@@ -1,9 +1,9 @@
-/** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
 	content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
 		extend: {
 			colors: {
+				night: "hsla(var(--color-night) / <alpha-value>)",
 				water: "hsla(var(--type-water) / <alpha-value>)",
 				fire: "hsla(var(--type-fire) / <alpha-value>)",
 				grass: "hsla(var(--type-grass) / <alpha-value>)",
@@ -24,5 +24,12 @@ export default {
 			}
 		}
 	},
+	darkMode: "class",
+	safelist: [
+		{
+			pattern:
+				/.*(water|fire|grass|electric|ice|fighting|poison|ground|flying|psychic|bug|rock|ghost|dragon|dark|steel|fairy).*/
+		}
+	],
 	plugins: []
 };
