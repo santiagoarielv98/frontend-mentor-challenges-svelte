@@ -13,7 +13,6 @@ const usePokemon = () => {
 			fetchRandomPokemon()
 				.then((data) => {
 					setLoading(true);
-					console.log(data);
 					setpokemon(data);
 				})
 				.catch((error) => {

@@ -3,6 +3,8 @@ export interface Pokemon {
 	name: string;
 	sprites: PokemonSprites;
 	types: PokemonType[];
+	weight: number;
+	height: number;
 }
 
 export interface PokemonSprites {

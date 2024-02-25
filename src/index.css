@@ -24,3 +24,8 @@
 		--type-fairy: 300 87% 78%;
 	}
 }
+
+
+body {
+	@apply bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans antialiased text-base;
+}
